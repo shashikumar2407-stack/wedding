@@ -1,1 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation | Sukanya & Prem Kumar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@400;700&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --maroon: #800000;
+            --cream: #FFFDD0;
+            --text-dark: #2c2c2c;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            background-color: var(--cream);
+            color: var(--text-dark);
+            text-align: center;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* --- Hero Section (GIF) --- */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            position: relative;
+        }
+
+        .hero-gif {
+            max-width: 90%;
+            max-height: 70vh;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            font-size: 1.5rem;
+            color: var(--gold);
+            animation: bounce 2s infinite;
+            font-family: 'Cinzel', serif;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+
+        /* --- Content Container --- */
+        .container {
+            padding: 40px 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* --- Couple Photo Section (Mobile Optimized) --- */
+        .photo-container {
+            width: 100%;
+            margin: 30px 0;
+            padding: 10px;
+            background: white;
+            border: 2px solid var(--gold);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+
+        .couple-photo {
+            width: 100%;
+            height: auto; /* Ensures height scales naturally with width */
+            display: block;
+            border-radius: 2px;
+        }
+
+        /* --- Text Styling --- */
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: var(--maroon);
+            margin: 10px 0;
+        }
+
+        h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            color: var(--gold);
+            margin-top: 20px;
+        }
+
+        .venue-box {
+            border-top: 1px solid var(--gold);
+            border-bottom: 1px solid var(--gold);
+            padding: 30px 10px;
+            margin: 40px 0;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .details {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        /* --- Buttons --- */
+        .btn {
+            display: block; /* Stacked on mobile for easier clicking */
+            padding: 15px 25px;
+            margin: 15px auto;
+            max-width: 250px;
+            background-color: var(--maroon);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            transition: 0.3s;
+            border: 1px solid var(--maroon);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        /* --- Countdown --- */
+        .countdown-title {
+            font-family: 'Cinzel', serif;
+            margin-top: 40px;
+            color: var(--maroon);
+            font-size: 1rem;
+        }
+
+        #countdown {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .count-item {
+            background: white;
+            padding: 10px 5px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .count-number {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--maroon);
+        }
+
+        .count-label {
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            color: var(--gold);
+            letter-spacing: 1px;
+        }
+
+        footer {
+            padding: 50px 20px;
+            font-size: 0.8rem;
+            color: #777;
+            letter-spacing: 1px;
+        }
+
+        /* Media Query for larger screens */
+        @media (min-width: 600px) {
+            .btn { display: inline-block; margin: 10px; }
+            h1 { font-size: 4.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <img src="https://image2url.com/r2/default/gifs/1775240378528-da798b4e-de60-44d4-a2aa-c54bde0bd311.gif" alt="Wedding Celebration" class="hero-gif">
+        <div class="scroll-down">Scroll Down <br> ▼</div>
+    </section>
+
+    <div class="container">
+        
+        <div class="photo-container">
+            <img src="https://image2url.com/r2/default/images/1775316051727-32eb6110-604d-4d7c-8466-8f146c2b4a2f.jpg" alt="Sukanya & Prem Kumar" class="couple-photo">
+        </div>
+
+        <section class="invitation-text">
+            <h2>Welcome to the Wedding of</h2>
+            <h1>Sukanya & Prem Kumar</h1>
+            
+            <div class="venue-box">
+                <p class="details">
+                    <strong>Venue:</strong><br>
+                    Sri Karumariyamma Kalyana Mantapa,<br>
+                    Kanakigiri, Mysuru
+                </p>
+                <p class="details">
+                    <strong>Reception:</strong><br>
+                    3 June 2026 at 07:30 p.m.
+                </p>
+                
+                <a href="https://maps.app.goo.gl/4Pk4Fax6uLjDjLEx8" target="_blank" class="btn">View Location</a>
+                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding+Reception:+Sukanya+%26+Prem+Kumar&dates=20260603T193000/20260603T223000&details=Wedding+Celebration&location=Sri+Karumariyamma+Kalyana+Mantapa,+Kanakigiri,+Mysuru" target="_blank" class="btn">Add to Calendar</a>
+            </div>
+        </section>
+
+        <section class="timer">
+            <h3 class="countdown-title">The Celebration Begins In</h3>
+            <div id="countdown">
+                <div class="count-item">
+                    <span class="count-number" id="days">00</span>
+                    <span class="count-label">Days</span>
+                </div>
+                <div class="count-item">
+                    <span class="count-number" id="hours">00</span>
+                    <span class="count-label">Hours</span>
+                </div>
+                <div class="count-item">
+                    <span class="count-number" id="minutes">00</span>
+                    <span class="count-label">Mins</span>
+                </div>
+                <div class="count-item">
+                    <span class="count-number" id="seconds">00</span>
+                    <span class="count-label">Secs</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Seeking your blessings and presence.</p>
+        <p style="margin-top:10px;">&copy; 2026 Sukanya & Prem</p>
+    </footer>
+
+    <script>
+        // Countdown Timer Logic
+        const targetDate = new Date("June 3, 2026 19:30:00").getTime();
+
+        const updateCountdown = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            if (distance < 0) {
+                clearInterval(updateCountdown);
+                document.getElementById("countdown").innerHTML = "The Celebration has Begun!";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
