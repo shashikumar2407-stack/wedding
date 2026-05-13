@@ -81,7 +81,7 @@
 
         .couple-photo {
             width: 100%;
-            height: auto; /* Ensures height scales naturally with width */
+            height: auto; 
             display: block;
             border-radius: 2px;
         }
@@ -115,9 +115,17 @@
             margin-bottom: 15px;
         }
 
+        .muhurtham-divider {
+            height: 1px;
+            background-color: var(--gold);
+            width: 50%;
+            margin: 20px auto;
+            opacity: 0.5;
+        }
+
         /* --- Buttons --- */
         .btn {
-            display: block; /* Stacked on mobile for easier clicking */
+            display: block; 
             padding: 15px 25px;
             margin: 15px auto;
             max-width: 250px;
@@ -179,7 +187,6 @@
             letter-spacing: 1px;
         }
 
-        /* Media Query for larger screens */
         @media (min-width: 600px) {
             .btn { display: inline-block; margin: 10px; }
             h1 { font-size: 4.5rem; }
@@ -209,9 +216,18 @@
                     Sri Karumariyamma Kalyana Mantapa,<br>
                     Kanakigiri, Mysuru
                 </p>
+                
                 <p class="details">
                     <strong>Reception:</strong><br>
                     3 June 2026 at 07:30 p.m.
+                </p>
+
+                <div class="muhurtham-divider"></div>
+
+                <p class="details">
+                    <strong>Dhara Muhurtham:</strong><br>
+                    4 June 2026<br>
+                    Time: 04:30 a.m. to 06:00 a.m.
                 </p>
                 
                 <a href="https://maps.app.goo.gl/4Pk4Fax6uLjDjLEx8" target="_blank" class="btn">View Location</a>
@@ -249,7 +265,6 @@
     </footer>
 
     <script>
-        // Countdown Timer Logic
         const targetDate = new Date("June 3, 2026 19:30:00").getTime();
 
         const updateCountdown = setInterval(function() {
